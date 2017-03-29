@@ -25,9 +25,6 @@
     
     self.tabBarItem.title = @"clock";
 
-    self.tabBarController.navigationController.title = @"ONE";
-    
-    NSLog(@" image path %@",[[NSBundle mainBundle] pathForResource:@"120" ofType:@"png"]);
 }
 
 

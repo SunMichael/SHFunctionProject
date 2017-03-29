@@ -217,6 +217,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AW9MC26Y7G;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -475,6 +480,7 @@
 				049777081E8B5C2B00C3B8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		049777281E8B9D9D00C3B8EA /* Build configuration list for PBXNativeTarget "NotificationController" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +489,7 @@
 				0497772A1E8B9D9D00C3B8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

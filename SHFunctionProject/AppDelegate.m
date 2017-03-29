@@ -41,7 +41,11 @@
 
 
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)() )completionHandler{
-    
+    if ([response.actionIdentifier isEqualToString:@"text"]) {
+        UNTextInputNotificationResponse *textResponse = (UNTextInputNotificationResponse *)response;
+        
+        NSLog(@" 获取到输入的信息 : %@ ", textResponse.userText);
+    }
     
     completionHandler();
 }
