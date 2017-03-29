@@ -44,3 +44,18 @@
 }
 
 @end
+
+
+/*
+ 
+ plist 文件的category id 要和通知的 content id 对应  可以设置成array对应多条不同的通知
+ 
+ */
+
+
+
+
+
+
+
+

@@ -37,6 +37,8 @@
 - (IBAction)confirmAlert:(id)sender {
     
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    [center removeAllPendingNotificationRequests];
+    
     [center setNotificationCategories:[NSSet setWithObjects:[self getCategory], nil]];
     
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
