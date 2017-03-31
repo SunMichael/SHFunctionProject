@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049270301E8DFACB000F6F5B /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492702F1E8DFACB000F6F5B /* NotificationService.m */; };
+		049270341E8DFACB000F6F5B /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0492702C1E8DFACA000F6F5B /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		049270401E8DFCE0000F6F5B /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492703F1E8DFCE0000F6F5B /* ShareViewController.m */; };
+		049270431E8DFCE0000F6F5B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049270411E8DFCE0000F6F5B /* MainInterface.storyboard */; };
+		049270471E8DFCE0000F6F5B /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0492703C1E8DFCE0000F6F5B /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		049776F41E8B5C2A00C3B8EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049776F31E8B5C2A00C3B8EA /* main.m */; };
 		049776F71E8B5C2A00C3B8EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049776F61E8B5C2A00C3B8EA /* AppDelegate.m */; };
 		049776FA1E8B5C2A00C3B8EA /* AlertFNCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049776F91E8B5C2A00C3B8EA /* AlertFNCController.m */; };
@@ -24,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		049270321E8DFACB000F6F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049776E71E8B5C2800C3B8EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0492702B1E8DFACA000F6F5B;
+			remoteInfo = NotificationService;
+		};
+		049270451E8DFCE0000F6F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049776E71E8B5C2800C3B8EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0492703B1E8DFCE0000F6F5B;
+			remoteInfo = ShareExtension;
+		};
 		049777251E8B9D9D00C3B8EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 049776E71E8B5C2800C3B8EA /* Project object */;
@@ -40,7 +59,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				049270471E8DFCE0000F6F5B /* ShareExtension.appex in Embed App Extensions */,
 				049777271E8B9D9D00C3B8EA /* NotificationController.appex in Embed App Extensions */,
+				049270341E8DFACB000F6F5B /* NotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +69,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0492702C1E8DFACA000F6F5B /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0492702E1E8DFACA000F6F5B /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		0492702F1E8DFACB000F6F5B /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		049270311E8DFACB000F6F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0492703C1E8DFCE0000F6F5B /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0492703E1E8DFCE0000F6F5B /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		0492703F1E8DFCE0000F6F5B /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		049270421E8DFCE0000F6F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		049270441E8DFCE0000F6F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049776EF1E8B5C2900C3B8EA /* SHFunctionProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHFunctionProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049776F31E8B5C2A00C3B8EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		049776F51E8B5C2A00C3B8EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +103,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		049270291E8DFACA000F6F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049270391E8DFCE0000F6F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		049776EC1E8B5C2900C3B8EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,11 +136,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0492702D1E8DFACA000F6F5B /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				0492702E1E8DFACA000F6F5B /* NotificationService.h */,
+				0492702F1E8DFACB000F6F5B /* NotificationService.m */,
+				049270311E8DFACB000F6F5B /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		0492703D1E8DFCE0000F6F5B /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0492703E1E8DFCE0000F6F5B /* ShareViewController.h */,
+				0492703F1E8DFCE0000F6F5B /* ShareViewController.m */,
+				049270411E8DFCE0000F6F5B /* MainInterface.storyboard */,
+				049270441E8DFCE0000F6F5B /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
 		049776E61E8B5C2800C3B8EA = {
 			isa = PBXGroup;
 			children = (
 				049776F11E8B5C2900C3B8EA /* SHFunctionProject */,
 				0497771D1E8B9D9D00C3B8EA /* NotificationController */,
+				0492702D1E8DFACA000F6F5B /* NotificationService */,
+				0492703D1E8DFCE0000F6F5B /* ShareExtension */,
 				049777181E8B9D9D00C3B8EA /* Frameworks */,
 				049776F01E8B5C2900C3B8EA /* Products */,
 			);
@@ -107,6 +174,8 @@
 			children = (
 				049776EF1E8B5C2900C3B8EA /* SHFunctionProject.app */,
 				049777171E8B9D9C00C3B8EA /* NotificationController.appex */,
+				0492702C1E8DFACA000F6F5B /* NotificationService.appex */,
+				0492703C1E8DFCE0000F6F5B /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +232,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0492702B1E8DFACA000F6F5B /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049270371E8DFACB000F6F5B /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				049270281E8DFACA000F6F5B /* Sources */,
+				049270291E8DFACA000F6F5B /* Frameworks */,
+				0492702A1E8DFACA000F6F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = 0492702C1E8DFACA000F6F5B /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0492703B1E8DFCE0000F6F5B /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049270481E8DFCE0000F6F5B /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				049270381E8DFCE0000F6F5B /* Sources */,
+				049270391E8DFCE0000F6F5B /* Frameworks */,
+				0492703A1E8DFCE0000F6F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 0492703C1E8DFCE0000F6F5B /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		049776EE1E8B5C2900C3B8EA /* SHFunctionProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049777061E8B5C2B00C3B8EA /* Build configuration list for PBXNativeTarget "SHFunctionProject" */;
@@ -176,6 +279,8 @@
 			);
 			dependencies = (
 				049777261E8B9D9D00C3B8EA /* PBXTargetDependency */,
+				049270331E8DFACB000F6F5B /* PBXTargetDependency */,
+				049270461E8DFCE0000F6F5B /* PBXTargetDependency */,
 			);
 			name = SHFunctionProject;
 			productName = SHFunctionProject;
@@ -208,6 +313,16 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
+					0492702B1E8DFACA000F6F5B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AW9MC26Y7G;
+						ProvisioningStyle = Automatic;
+					};
+					0492703B1E8DFCE0000F6F5B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AW9MC26Y7G;
+						ProvisioningStyle = Automatic;
+					};
 					049776EE1E8B5C2900C3B8EA = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AW9MC26Y7G;
@@ -240,11 +355,28 @@
 			targets = (
 				049776EE1E8B5C2900C3B8EA /* SHFunctionProject */,
 				049777161E8B9D9C00C3B8EA /* NotificationController */,
+				0492702B1E8DFACA000F6F5B /* NotificationService */,
+				0492703B1E8DFCE0000F6F5B /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0492702A1E8DFACA000F6F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0492703A1E8DFCE0000F6F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049270431E8DFCE0000F6F5B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		049776ED1E8B5C2900C3B8EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +399,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		049270281E8DFACA000F6F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049270301E8DFACB000F6F5B /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049270381E8DFCE0000F6F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049270401E8DFCE0000F6F5B /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		049776EB1E8B5C2900C3B8EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +438,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		049270331E8DFACB000F6F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0492702B1E8DFACA000F6F5B /* NotificationService */;
+			targetProxy = 049270321E8DFACB000F6F5B /* PBXContainerItemProxy */;
+		};
+		049270461E8DFCE0000F6F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0492703B1E8DFCE0000F6F5B /* ShareExtension */;
+			targetProxy = 049270451E8DFCE0000F6F5B /* PBXContainerItemProxy */;
+		};
 		049777261E8B9D9D00C3B8EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 049777161E8B9D9C00C3B8EA /* NotificationController */;
@@ -298,6 +456,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		049270411E8DFCE0000F6F5B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049270421E8DFCE0000F6F5B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		049776FB1E8B5C2A00C3B8EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -325,6 +491,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		049270351E8DFACB000F6F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AW9MC26Y7G;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yizhenjia.com.SHFunctionProject.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		049270361E8DFACB000F6F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AW9MC26Y7G;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yizhenjia.com.SHFunctionProject.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		049270491E8DFCE0000F6F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AW9MC26Y7G;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yizhenjia.com.SHFunctionProject.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0492704A1E8DFCE0000F6F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AW9MC26Y7G;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yizhenjia.com.SHFunctionProject.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		049777041E8B5C2B00C3B8EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +678,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		049270371E8DFACB000F6F5B /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049270351E8DFACB000F6F5B /* Debug */,
+				049270361E8DFACB000F6F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		049270481E8DFCE0000F6F5B /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049270491E8DFCE0000F6F5B /* Debug */,
+				0492704A1E8DFCE0000F6F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		049776EA1E8B5C2800C3B8EA /* Build configuration list for PBXProject "SHFunctionProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

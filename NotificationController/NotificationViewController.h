@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 自定义通知样式
+ */
 @interface NotificationViewController : UIViewController
 
 @end

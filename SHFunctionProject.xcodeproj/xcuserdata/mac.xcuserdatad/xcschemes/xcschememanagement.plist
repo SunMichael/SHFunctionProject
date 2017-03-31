@@ -9,14 +9,34 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>NotificationService.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SHFunctionProject.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0492702B1E8DFACA000F6F5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0492703B1E8DFCE0000F6F5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>049776EE1E8B5C2900C3B8EA</key>
 		<dict>
 			<key>primary</key>

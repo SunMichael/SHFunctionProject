@@ -25,6 +25,8 @@
     
     self.tabBarItem.title = @"clock";
 
+    UNCalendarNotificationTrigger *calenderTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:[self weeklyAlert] repeats:YES];
+    NSLog(@" next %@ ",calenderTrigger.nextTriggerDate);
 }
 
 
@@ -58,10 +60,10 @@
     content.attachments = @[attment];
     
     //第一种是timer触发
-    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:30 repeats:NO];
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
     
     //第二种是定期触发
-    UNCalendarNotificationTrigger *calenderTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:[self weeklyAlert] repeats:NO];
+    UNCalendarNotificationTrigger *calenderTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:[self weeklyAlert] repeats:YES];
     
     //第三种是范围触发
     CLLocationCoordinate2D center2 = CLLocationCoordinate2DMake(37.335400, -122.009201);
@@ -84,6 +86,8 @@
         
     }];
     }
+
+    
     
 }
 
@@ -91,9 +95,9 @@
 
 - (NSDateComponents *)weeklyAlert{
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    components.weekday = 4;   //周末是1
-    components.hour = 15;
-    components.minute = 24;
+//    components.weekday = 5;   //周末是1
+    components.hour = 10;
+    components.minute = 20;
     return components;
 }
 
